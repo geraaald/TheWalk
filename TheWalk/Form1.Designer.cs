@@ -29,13 +29,14 @@
         private void InitializeComponent()
         {
             this.picMan = new System.Windows.Forms.PictureBox();
+            this.btnWalk = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.picMan)).BeginInit();
             this.SuspendLayout();
             // 
             // picMan
             // 
             this.picMan.Image = global::TheWalk.Properties.Resources.walk1;
-            this.picMan.Location = new System.Drawing.Point(52, 29);
+            this.picMan.Location = new System.Drawing.Point(130, 12);
             this.picMan.Name = "picMan";
             this.picMan.Size = new System.Drawing.Size(180, 180);
             this.picMan.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
@@ -43,11 +44,22 @@
             this.picMan.TabStop = false;
             this.picMan.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
+            // btnWalk
+            // 
+            this.btnWalk.Location = new System.Drawing.Point(114, 211);
+            this.btnWalk.Name = "btnWalk";
+            this.btnWalk.Size = new System.Drawing.Size(75, 23);
+            this.btnWalk.TabIndex = 1;
+            this.btnWalk.Text = "WALK";
+            this.btnWalk.UseVisualStyleBackColor = true;
+            this.btnWalk.Click += new System.EventHandler(this.btnWalk_Click);
+            // 
             // frmTheWalk
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(284, 261);
+            this.ClientSize = new System.Drawing.Size(322, 261);
+            this.Controls.Add(this.btnWalk);
             this.Controls.Add(this.picMan);
             this.Name = "frmTheWalk";
             this.Text = "The Walk";
@@ -60,6 +72,7 @@
         #endregion
 
         private System.Windows.Forms.PictureBox picMan;
+        private System.Windows.Forms.Button btnWalk;
     }
 }
 
